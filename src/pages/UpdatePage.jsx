@@ -6,7 +6,7 @@ export default function UpdatePage() {
     const [post, setPost] = useState();
     const params = useParams();
     const navigate = useNavigate();
-    const url = `https://race-rest-default-rtdb.firebaseio.com/posts/${params.postId}.json`;
+    const url = `https://imageupload-9eb6e-default-rtdb.europe-west1.firebasedatabase.app/posts/${params.postId}.json`;
 
     useEffect(() => {
         async function getPost() {

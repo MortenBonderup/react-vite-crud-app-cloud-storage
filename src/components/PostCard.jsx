@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import UserAvatar from "./UserAvatar";
+// import UserAvatar from "./UserAvatar";
 
 export default function PostCard({ post }) {
     const navigate = useNavigate();
@@ -13,7 +13,7 @@ export default function PostCard({ post }) {
 
     return (
         <article onClick={handleClick}>
-            <UserAvatar uid={post.uid} />
+            {/* <UserAvatar uid={post.uid} />*/}
             <img src={post.image} alt={post.title} />
             <h2>{post.title}</h2>
             <p>{post.body}</p>
